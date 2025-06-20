@@ -27,6 +27,7 @@ Dockerfile~
 
 # Google Cloud / BigQuery credentials
 gcloud_application_default_credentials.json
+.boto
 
 # Jupyter kernel specs (if created locally)
 .local/share/jupyter/kernels/
@@ -42,3 +43,5 @@ gcloud_application_default_credentials.json
 .vscode-server/
 .bash_history
 .gitconfig*
+.boto/
+.config/

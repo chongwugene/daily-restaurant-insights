@@ -18,6 +18,14 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+# Install bq CLI
+RUN apt-get update && apt-get install -y \
+    lsb-release \
+    gnupg \
+    && echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list \
+    && curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add - \
+    && apt-get update && apt-get install -y google-cloud-sdk
+
 # Upgrade pip and wheel for smoother installs
 RUN pip install --upgrade pip setuptools wheel
 
