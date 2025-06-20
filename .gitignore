@@ -19,7 +19,6 @@ keys/
 
 # VSCode settings
 .vscode/
-.vscode-server/
 
 # Docker-related
 dbt-venv/
@@ -31,3 +30,15 @@ gcloud_application_default_credentials.json
 
 # Jupyter kernel specs (if created locally)
 .local/share/jupyter/kernels/
+
+# System and user config
+.cache/
+.devcontainer/
+.dotnet/
+.ipython/
+.jupyter/
+.local/
+.ssh/
+.vscode-server/
+.bash_history
+.gitconfig*
