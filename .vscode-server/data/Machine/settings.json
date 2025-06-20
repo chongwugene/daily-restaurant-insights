@@ -1,0 +1,7 @@
+{
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Debian GNU/Linux 12 (bookworm)\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `git`, `curl`, `wget`, `ssh`, `scp`, `gpg`, `find`, `grep`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	]
+}

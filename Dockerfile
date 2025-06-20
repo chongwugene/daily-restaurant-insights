@@ -25,7 +25,15 @@ RUN pip install --upgrade pip setuptools wheel
 # - dbt-bigquery: transformation layer
 # - pandas, requests: for ingestion/ETL scripting
 # (You can add others here later, like pyarrow or jinja2 if needed)
-RUN pip install dbt-bigquery pandas requests
+RUN pip install \
+    dbt-bigquery \
+    pandas \
+    requests \
+    jupyter \
+    notebook \
+    ipykernel \
+    python-dotenv \
+    google-cloud-storage
 
 # Create a non-root user for better security (best practice)
 RUN useradd -ms /bin/bash devuser
@@ -36,5 +44,10 @@ USER devuser
 # Set working directory inside the container
 WORKDIR /home/devuser
 
+# Register the kernel so VS Code can detect it
+RUN python3 -m ipykernel install --user \
+    --name=daily_insights_env \
+    --display-name="Python 3.11 (Daily Insights)"
+    
 # By default, open a shell so you can work interactively
 CMD ["bash"]
