@@ -1,0 +1,10 @@
+dbt-bigquery
+pandas
+pyspark
+google-cloud-bigquery
+google-cloud-storage
+requests
+pytest
+ydata-profiling
+python-dotenv
+jupyterlab
