@@ -6,5 +6,5 @@ google-cloud-storage
 requests
 pytest
 ydata-profiling
-python-dotenv
-jupyterlab
+python-dotenv>=1.0.1
+jupyterlab>=1.0.0

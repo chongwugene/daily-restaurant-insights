@@ -1,5 +1,23 @@
+# Python
 __pycache__/
 *.pyc
+
+# Environments & secrets
+.env
+*.env
+*.json
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Old gitignore
 .venv/
 env/
 .ipynb_checkpoints/
@@ -7,4 +25,4 @@ target/
 dbt_modules/
 .env
 *.json
-.DS_Store
+.DS_Store.env
